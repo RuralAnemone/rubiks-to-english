@@ -8,16 +8,15 @@ english = moves.split(/\s+/).map(move => {
   const direction =
     move.length == 1
       ? "clockwise"
-      : move [1] == "'"
+      : move[1] == "'"
         ? "counterclockwise"
         : "twice";
   return `turn the ${names[letters.indexOf(move[0])]} face ${direction}`;
 })
 
-var englishString = english.join(", ");
+var /* troll emoji */ englishString = english.join(", ");
 
 // tidy up grammar a bit
-
 englishString = englishString[0].toUpperCase() + englishString.substring(1) + ".";
 
 console.log(englishString);
