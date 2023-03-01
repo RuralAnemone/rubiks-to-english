@@ -1,4 +1,4 @@
-const moves = prompt("enter some moves (only supports the basic 6, and only normal, prime, and double moves): ");
+const moves = prompt("enter some moves: ");
 const letters = ["L", "U", "F", "R", "D", "B"];
 const names = ["left", "up", "front", "right", "down", "back"];
 
